@@ -45,6 +45,10 @@ for index in range (0, 10):
 print ("Posição do maior elemento (de 0 a 9): ", max_index, ", cujo valor é ", max_value)
 print ("Média: ", round(sum(vector)/len(vector), 2))
 
+# Resultado:
+# Posição do maior elemento (de 0 a 9):  8 , cujo valor é  288801
+# Média:  29555.94
+
 
 # *********************************************** #
 print("\n\n\n\n-------------- Exercicio 3 ------------------")
@@ -62,7 +66,8 @@ for index in range(5):
     nota = input("Qual a nota do " + str(index + 1) + "o aluno? ")
     alunos["aluno" + str(index)] = int(nota)
 
-
+# melhor_nota guarda o melhor aluno na posição 0 e a melhor nota na
+# posição 1
 melhor_nota = ["nome_aluno", 0]
 for myList in alunos.items():
     if (melhor_nota[1] < myList[1]):
